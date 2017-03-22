@@ -86,9 +86,13 @@
 			<div class="col-md-5 col-sm-5 col-xs-12">
 			  <span>Wpisz fraze ktora chcesz wyszukac na twiterze...</span>
 			  <div class="search">
-				<input type="text" placeholder="Szukaj slowa..." id="search">
-				<button type="submit"
+				<input id="input-search" type="text" placeholder="Szukaj slowa..." id="search">
+				<button id="btn-search" type="button" class="btn btn-default">Search</button>
 			  </div>
+			</div>
+			<div class="col-xs-12">
+				<ul id="searchResults">
+				</ul>
 			</div>
 		  </div>
           <!--<div class="row">
@@ -152,6 +156,8 @@
   
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/jsrender.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/twitter.js"></script>
 </body>
 </html>

@@ -3,15 +3,21 @@
 require_once "twitter.php";
 
 $connection = Twitter::Instance();
+$phrase = $_GET['phrase'];
 
-$tweets = $connection->get("search/tweets", ["q" => "%23poland", "result_type" => "recent", "lang" => "pl", "count" => 5]);
+if($phrase ==  null)
+	die("Phrase cannot be null!");
 
-$response = array();
-foreach ((array)$tweets->statuses as $entry) {
-	$response[$entry->id] = array($entry->text, $entry->retweet_count, $entry->entities->hashtags);
-}
+$tweets = $connection->get("search/tweets", ["q" => "%23$phrase", "result_type" => "recent", "lang" => "pl", "count" => 5]);
+
+echo 
+//todo proper better array from responses
+// $response = array();
+// foreach ($tweets->statuses as $entry) {
+	// $response[$entry->id] = array($entry->text, $entry->retweet_count, $entry->entities->hashtags);
+// }
 
 header('Content-Type: application/json');
-echo json_encode($response);
+echo json_encode($tweets->statuses);
 
 ?>
