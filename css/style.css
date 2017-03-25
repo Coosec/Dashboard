@@ -1,3 +1,13 @@
+
+#searchResults li {
+border: 1px solid black;
+padding: 18px;
+}
+
+#searchResults ul {
+list-style-type:none;
+}
+
   .login-header .nav-tabs {
   border-bottom: none;
 }
@@ -654,3 +664,7 @@ header {
       width: 100%;
     }
   }
+
+   #searchResults ul {
+	list-style-type:none;
+   }

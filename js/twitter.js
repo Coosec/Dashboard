@@ -3,7 +3,7 @@ $(document).ready(function() {
 	const tweetsTemplate = $('#tweetsTemplate');
 	const inputSearch = $('#input-search');
 	
-	var myTmpl = $.templates("<li><label>Treść:</label> {{:text}}</li>");
+	var myTmpl = $.templates("<li><div style='tweet_item'>Użytkownik:<b> {{:user.name}} </b> Liczba followersów: {{:user.followers_count}}<br/> Avatar: <img src='{{:user.profile_image_url}}'/></div><label>Treść:</label> {{:text}}</li>");
 	
 	twitterSearch.click(function() {
 		var value = inputSearch.val();
