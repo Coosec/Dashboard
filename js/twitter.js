@@ -8,7 +8,7 @@ $(document).ready(function() {
 	twitterSearch.click(function() {
 		var value = inputSearch.val();
 		if(value !== ""){
-			$.get("domain/twitter/main.php", { phrase: value }, function(data) {
+			$.post("twitter/tweets", { phrase: value }, function(data) {
 				var html = myTmpl.render(data);
 				console.log(data);
 				$("#searchResults").html(html);
