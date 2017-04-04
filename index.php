@@ -10,6 +10,10 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL );
+define('APP_PATH',$_SERVER['DOCUMENT_ROOT']."/Jacob/");
+define('APP_PATH_VIEWS',$_SERVER['DOCUMENT_ROOT']."/Jacob/Views/");
+//twitter autoloader
+require_once "Libs/twitter/twitteroauth/autoload.php";
 
 spl_autoload_register(function($className)
 {

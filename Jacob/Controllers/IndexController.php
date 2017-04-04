@@ -13,8 +13,6 @@ class IndexController extends Controller
     public function indexAction()
     {
 
-      $this->view->setLayout(false);
-
       $this->view->render();
 
     }

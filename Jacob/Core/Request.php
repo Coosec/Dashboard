@@ -41,14 +41,10 @@ class Request
      */
     public function __construct($request)
     {
-        switch($_SERVER['REQUEST_METHOD']) {
-            case 'GET':
+
                 $this->_getFields = $_GET;
-                break;
-            case 'POST':
+
                 $this->_postFields = $_POST;
-                break;
-        }
 
         $this->_requestUri = $_SERVER['REQUEST_URI'];
 
@@ -62,6 +58,15 @@ class Request
     public function getPost()
     {
         return $this->_postFields;
+    }
+
+
+    /**
+     * @return array
+     */
+    public function getFields()
+    {
+        return $this->_getFields;
     }
 
     /**

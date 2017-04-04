@@ -52,7 +52,12 @@ class Router
     }
 
     private function matchRequest() {
-        $controllerAction = preg_match('/\w+\/?\w+/',$this->_request->getRequestUri(),$matches);
+        $requestUri = $this->_request->getRequestUri();
+        if($this->_request->getRequestUri() == '/'){
+            $requestUri = 'index';
+        }
+        $controllerAction = preg_match('/\w+\/?\w+/',$requestUri,$matches);
+
         if($controllerAction){
             $matchedPaths = explode('/',$matches[0]);
             $controller = $matchedPaths[0];

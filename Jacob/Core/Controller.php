@@ -21,6 +21,10 @@ abstract class Controller
      * @var Request
      */
     protected $_request;
+    /**
+     * @var View
+     */
+    protected $view;
 
     protected $_template;
     /**
@@ -30,7 +34,7 @@ abstract class Controller
     public function __construct(Request $request)
     {
         $this->_request = $request;
-        $this->view = new View;
+        $this->view = new View($request);
         $action = $request->getAction().self::SUFFIX_CONTROLLER_ACTION;
 
      try {
@@ -44,9 +48,6 @@ abstract class Controller
      }
     }
 
-    public function getRequest()
-    {
 
-    }
 
 }
