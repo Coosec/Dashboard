@@ -47,6 +47,7 @@ class Router
             }
         } catch(ControllerNotFound $e)
         {
+            header("HTTP/1.1 500 Internal Server Error");
             \Jacob\Utils\Debug::showError($e->getMessage());
         }
     }
