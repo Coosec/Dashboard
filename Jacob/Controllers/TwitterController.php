@@ -21,14 +21,14 @@ class TwitterController extends Controller
     {
         $this->view->setDefaultContentType('application/json');
         $fields = $this->_request->getPost();
-
+        $countOfTweets = $fields['countOfTweets'];
         if(!isset($fields['phrase'])) {
             $response = 'Podaj cokolwiek!';
         } else {
          try {
              $this->setTwitterGranted();
              $phrase = $fields['phrase'];
-             $response = $this->connection->get("search/tweets", ["q" => "%23$phrase", "result_type" => "recent", "lang" => "pl", "count" => 5])->statuses;
+             $response = $this->connection->get("search/tweets", ["q" => "%23$phrase", "result_type" => "recent", "lang" => "pl", "count" => $countOfTweets])->statuses;
          } catch(\Exception $e) {
              $response = $e->getMessage();
          }
