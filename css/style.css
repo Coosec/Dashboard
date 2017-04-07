@@ -1,11 +1,53 @@
-
-#searchResults li {
-border: 1px solid black;
-padding: 18px;
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
 }
 
-#searchResults ul {
-list-style-type:none;
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 70px;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.tweet_item .background img{
+  max-width: 281px;
+  min-width: 315px;
+  min-height: 70px;
+  padding-bottom: 10px;
+  max-height: 100px;
+}
+
+.tweet_item {
+  padding: 20px;
+  min-width: 257px;
+  max-width: 400px;
 }
 
   .login-header .nav-tabs {
@@ -275,14 +317,6 @@ list-style-type:none;
   transition: all 0.5s ease;
 }
 
-.search input {
-  border: none;
-  font-size: 15px;
-  padding: 15px 9px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0) url("../images/search.png") no-repeat scroll 99% 12px;
-  color: #8492af;
-}
 
 header {
   background: #ffffff none repeat scroll 0 0;
@@ -526,11 +560,7 @@ header {
   margin-top: 2px;
 }
 
-.search input:focus {
-  border-bottom: 1px solid #BDC4D4;
-  line-height: 22px;
-  transition: 0.1s all;
-}
+
 
 .modal-header.login-header {
   border-top-left-radius: 5px;
