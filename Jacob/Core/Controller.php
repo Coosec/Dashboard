@@ -41,6 +41,7 @@ abstract class Controller
          if (is_callable(array($this, $action))) {
              $this->$action();
          } else {
+             header("HTTP/1.1 500 Internal Server Error");
              throw new ActionNotFound('Żądana akcja ' .$request->getAction() . ' jest niedostępna!');
          }
      } catch(ActionNotFound $e) {
