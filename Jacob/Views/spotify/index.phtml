@@ -1,0 +1,29 @@
+<h1>Spotify</h1>
+<div class="row">
+    <div class="col-md-5 col-sm-5 col-xs-12">
+        <span>Wpisz nazwe artysty ktorego chcesz wyszukac na spotify...</span>
+        <div class="search">
+            <input id="input-search-spotify" type="text" placeholder="Szukaj slowa..." class="form-control">
+            <button id="btn-search-spotify" type="button" class="btn btn-default">Search</button>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <ul id="searchResults">
+        </ul>
+    </div>
+</div>
+
+<script id="spotifyResults" type="text/x-jsrender">
+<ul>
+    {{for artists.items}}
+    <li>
+        <span>Artysta: {{:name}}</span>
+        {{for images[1]}}
+            <img src="{{:url}}" />
+        {{/for}}
+        <span>Obserwuje: {{:followers.total}}</span>
+        <span>Popularność: {{:popularity}}</span>
+    </li>
+    {{/for}}
+</ul>
+</script>
