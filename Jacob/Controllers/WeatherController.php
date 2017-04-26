@@ -26,12 +26,12 @@ class WeatherController extends Controller
         } else {
             $address = urlencode($address);
 
-            $url = $this->openWeatherApiUrl . "{$address}" . "&appid=" . "${key}";
+            $url = $this->openWeatherApiUrl . "{$address}" . "&appid=" . "{$this->key}";
         
             $resp_json = file_get_contents($url);
             
             $resp = json_decode($resp_json, true);
-
+            var_dump($resp); die;
             if($resp['status'] === 'OK'){
                 $response = $this->getCurrentWeatherConditionsFromAPI($resp);
             }
