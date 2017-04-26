@@ -31,19 +31,25 @@ class WeatherController extends Controller
             $resp_json = file_get_contents($url);
             
             $resp = json_decode($resp_json, true);
-            var_dump($resp); die;
-            if($resp['status'] === 'OK'){
-                $response = $this->getCurrentWeatherConditionsFromAPI($resp);
-            }
+
+            $response = $this->getCurrentWeatherConditionsFromAPI($resp);
         }
         echo json_encode($response);
     }
 
 	private function getCurrentWeatherConditionsFromAPI($openWeatherResponse)
 	{
-		$temperature = $openWeatherResponse['weather']['main']['temp'];
-		$result = array(
-                'temperature' => $temperature
+        //todo dobrze by bylo sprawdzic czy kazdy parametr jest ustawiony jak nie to zwracac pusty
+        //metoda isset (jak nie wiesz jak mozna narazie zostawic)
+        $weather = $openWeatherResponse['weather'][0];
+		$main = $openWeatherResponse['main'];
+        $wind = $openWeatherResponse['wind'];
+        $name = $openWeatherResponse['name'];
+        $result = array(
+                'weather' => $weather,
+                'main' => $main,
+                'wind' => $wind,
+                'place' => $name
             );
 		return $result;			
 	}
