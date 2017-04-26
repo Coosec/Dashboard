@@ -7,16 +7,15 @@
             <input class="form-control" id="input-search-weather" type="text" placeholder="Szukaj miasta...">
             <button id="btn-search-weather" type="button" class="btn btn-default">Szukaj</button>
         </div>
-    <div class="col-xs-12" id="weatherResult">
-    </div>
 </div>
-
+<div class="col-xs-12" id="weatherResult">
+</div>
 <script id="weatherTemplate" type="text/x-jsrender">
     <h2>Miejsce: {{:place}} </h2>
     <p>Temperatura {{:main.temp}} </p>
     <p>Temperatura maksymalna {{:main.temp_max}} </p>
     <p>Temperatura minimalna {{:main.temp_max}} </p>
-    <i>{{:weather.icon}}</i>
+    <img src="http://openweathermap.org/img/w/{{:weather.icon}}.png" />
     <p>Wiatr {{:wind.deg}}<p>
     <p>Predkosc wiatru {{:wind.speed}}</p>
 </script>
