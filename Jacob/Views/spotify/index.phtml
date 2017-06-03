@@ -8,6 +8,742 @@
         </div>
     </div>
     <div class="col-xs-12">
+    <div class="all clearfix" ng-show="search.totals['all'] > 0">
+<div id="search-results-short">
+</div>
+
+<div id='artysci' style='display:none;'>
+<div class="artists clearfix" ng-show="search.s('artists');">
+<div class="module">
+<header>
+<action class="action more-link" ng-click="search.l('artists');">See All</action>
+<h3>
+<span>Artists</span> (<total ng-bind="search.totals.artists" class="ng-binding">50</total>)
+</h3>
+</header>
+<ul class="img-grid content clearfix">
+<!-- ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberta-flack-lyrics.html" ml-ev="Search,Artists Item: roberta-flack-lyrics.html" href="http://www.metrolyrics.com/roberta-flack-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/c8d67fe361294262a37e85862839c879.png" src="http://img2-ak.lst.fm/i/u/174s/c8d67fe361294262a37e85862839c879.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>a Flack</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-johnson-lyrics.html" ml-ev="Search,Artists Item: robert-johnson-lyrics.html" href="http://www.metrolyrics.com/robert-johnson-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/991529fd759f4fa2a803fdcc098ecf20.png" src="http://img2-ak.lst.fm/i/u/174s/991529fd759f4fa2a803fdcc098ecf20.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Johnson</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-palmer-lyrics.html" ml-ev="Search,Artists Item: robert-palmer-lyrics.html" href="http://www.metrolyrics.com/robert-palmer-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/7147cd6fd7164ac7bb6f6218b50251dc.png" src="http://img2-ak.lst.fm/i/u/174s/7147cd6fd7164ac7bb6f6218b50251dc.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Palmer</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-plant-lyrics.html" ml-ev="Search,Artists Item: robert-plant-lyrics.html" href="http://www.metrolyrics.com/robert-plant-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/fc52362805e14c87b5f4295040242623.png" src="http://img2-ak.lst.fm/i/u/174s/fc52362805e14c87b5f4295040242623.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Plant</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-earl-keen-lyrics.html" ml-ev="Search,Artists Item: robert-earl-keen-lyrics.html" href="http://www.metrolyrics.com/robert-earl-keen-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/cb79d69e7cff4604a7979619934b4d3d.png" src="http://img2-ak.lst.fm/i/u/174s/cb79d69e7cff4604a7979619934b4d3d.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Earl Keen</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robbie-robertson-lyrics.html" ml-ev="Search,Artists Item: robbie-robertson-lyrics.html" href="http://www.metrolyrics.com/robbie-robertson-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/93c5af7d37984628b6c5afff1591363c.png" src="http://img2-ak.lst.fm/i/u/174s/93c5af7d37984628b6c5afff1591363c.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Robbie <em>Robert</em>son</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-miles-lyrics.html" ml-ev="Search,Artists Item: robert-miles-lyrics.html" href="http://www.metrolyrics.com/robert-miles-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/44e5e0b1e0cf4a0ea55380123e2710ca.png" src="http://img2-ak.lst.fm/i/u/174s/44e5e0b1e0cf4a0ea55380123e2710ca.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Miles</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-glasper-experiment-lyrics.html" ml-ev="Search,Artists Item: robert-glasper-experiment-lyrics.html" href="http://www.metrolyrics.com/robert-glasper-experiment-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/428b8208b79c492d8a43c1e82315018e.png" src="http://img2-ak.lst.fm/i/u/174s/428b8208b79c492d8a43c1e82315018e.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Glasper Experiment</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberto-carlos-lyrics.html" ml-ev="Search,Artists Item: roberto-carlos-lyrics.html" href="http://www.metrolyrics.com/roberto-carlos-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/246ae8067a2b7ab054710c5c663553ae.png" src="http://img2-ak.lst.fm/i/u/174s/246ae8067a2b7ab054710c5c663553ae.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>o Carlos</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-cray-lyrics.html" ml-ev="Search,Artists Item: robert-cray-lyrics.html" href="http://www.metrolyrics.com/robert-cray-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/871d387db84a4766a84c942b29b6b46c.png" src="http://img2-ak.lst.fm/i/u/174s/871d387db84a4766a84c942b29b6b46c.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Cray</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/burns-robert-lyrics.html" ml-ev="Search,Artists Item: burns-robert-lyrics.html" href="http://www.metrolyrics.com/burns-robert-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Burns <em>Robert</em></description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/sam-roberts-lyrics.html" ml-ev="Search,Artists Item: sam-roberts-lyrics.html" href="http://www.metrolyrics.com/sam-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/d35979eecac8423e890778e2078fd615.png" src="http://img2-ak.lst.fm/i/u/174s/d35979eecac8423e890778e2078fd615.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Sam <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-glasper-lyrics.html" ml-ev="Search,Artists Item: robert-glasper-lyrics.html" href="http://www.metrolyrics.com/robert-glasper-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/428b8208b79c492d8a43c1e82315018e.png" src="http://img2-ak.lst.fm/i/u/174s/428b8208b79c492d8a43c1e82315018e.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Glasper</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-tepper-lyrics.html" ml-ev="Search,Artists Item: robert-tepper-lyrics.html" href="http://www.metrolyrics.com/robert-tepper-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/14f087466a5642ca873097bb540f5c8f.png" src="http://img2-ak.lst.fm/i/u/174s/14f087466a5642ca873097bb540f5c8f.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Tepper</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robertidk-lyrics.html" ml-ev="Search,Artists Item: robertidk-lyrics.html" href="http://www.metrolyrics.com/robertidk-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>IDK</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/kerrie-roberts-lyrics.html" ml-ev="Search,Artists Item: kerrie-roberts-lyrics.html" href="http://www.metrolyrics.com/kerrie-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/b7ee118c25144c1996b3eb08a05a0837.png" src="http://img2-ak.lst.fm/i/u/174s/b7ee118c25144c1996b3eb08a05a0837.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Kerrie <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-downey-jr-lyrics.html" ml-ev="Search,Artists Item: robert-downey-jr-lyrics.html" href="http://www.metrolyrics.com/robert-downey-jr-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/98a1cf85ac2b47438416d07755ba5d10.png" src="http://img2-ak.lst.fm/i/u/174s/98a1cf85ac2b47438416d07755ba5d10.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Downey Jr.</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-randolph-the-family-band-lyrics.html" ml-ev="Search,Artists Item: robert-randolph-the-family-band-lyrics.html" href="http://www.metrolyrics.com/robert-randolph-the-family-band-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/c852e5c2b64e42c3b71aee3aaf47a696.png" src="http://img2-ak.lst.fm/i/u/174s/c852e5c2b64e42c3b71aee3aaf47a696.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Randolph &amp; The Family Band</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-wyatt-lyrics.html" ml-ev="Search,Artists Item: robert-wyatt-lyrics.html" href="http://www.metrolyrics.com/robert-wyatt-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/8c7fbe43ffa04a1b999fe10864777cce.png" src="http://img2-ak.lst.fm/i/u/174s/8c7fbe43ffa04a1b999fe10864777cce.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Wyatt</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/julie-roberts-lyrics.html" ml-ev="Search,Artists Item: julie-roberts-lyrics.html" href="http://www.metrolyrics.com/julie-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/cddfb70db97d4e00a5b556ba9f1411ac.png" src="http://img2-ak.lst.fm/i/u/174s/cddfb70db97d4e00a5b556ba9f1411ac.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Julie <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/ba-robertson-lyrics.html" ml-ev="Search,Artists Item: ba-robertson-lyrics.html" href="http://www.metrolyrics.com/ba-robertson-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/1a091ee3f83648f389080d2cfba5dcc5.png" src="http://img2-ak.lst.fm/i/u/174s/1a091ee3f83648f389080d2cfba5dcc5.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">B.a. <em>Robert</em>son</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-hunter-lyrics.html" ml-ev="Search,Artists Item: robert-hunter-lyrics.html" href="http://www.metrolyrics.com/robert-hunter-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/811a39fe63804954808ce27049e14acd.png" src="http://img2-ak.lst.fm/i/u/174s/811a39fe63804954808ce27049e14acd.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Hunter</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-delong-lyrics.html" ml-ev="Search,Artists Item: robert-delong-lyrics.html" href="http://www.metrolyrics.com/robert-delong-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/2c75c32750f7492b8cfaa60199885281.png" src="http://img2-ak.lst.fm/i/u/174s/2c75c32750f7492b8cfaa60199885281.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Delong</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-lester-folsom-lyrics.html" ml-ev="Search,Artists Item: robert-lester-folsom-lyrics.html" href="http://www.metrolyrics.com/robert-lester-folsom-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/18837a9c64a04428b6beb7b0ab408624.png" src="http://img2-ak.lst.fm/i/u/174s/18837a9c64a04428b6beb7b0ab408624.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Lester Folsom</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-francis-lyrics.html" ml-ev="Search,Artists Item: robert-francis-lyrics.html" href="http://www.metrolyrics.com/robert-francis-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/598a1e9970ab4f03aa3976dbbe226840.png" src="http://img2-ak.lst.fm/i/u/174s/598a1e9970ab4f03aa3976dbbe226840.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Francis</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-john-lyrics.html" ml-ev="Search,Artists Item: robert-john-lyrics.html" href="http://www.metrolyrics.com/robert-john-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/c378b9a55ec747dcba95677a40488798.png" src="http://img2-ak.lst.fm/i/u/174s/c378b9a55ec747dcba95677a40488798.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> John</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/palmer-robert-lyrics.html" ml-ev="Search,Artists Item: palmer-robert-lyrics.html" href="http://www.metrolyrics.com/palmer-robert-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Palmer <em>Robert</em></description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-calvert-lyrics.html" ml-ev="Search,Artists Item: robert-calvert-lyrics.html" href="http://www.metrolyrics.com/robert-calvert-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/1947e9bdb908412e8cbab9772e5a0a57.png" src="http://img2-ak.lst.fm/i/u/174s/1947e9bdb908412e8cbab9772e5a0a57.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Calvert</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-pollard-lyrics.html" ml-ev="Search,Artists Item: robert-pollard-lyrics.html" href="http://www.metrolyrics.com/robert-pollard-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/d7483a67f29c47eeae3f03b9b49ae05e.png" src="http://img2-ak.lst.fm/i/u/174s/d7483a67f29c47eeae3f03b9b49ae05e.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Pollard</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/emily-ann-roberts-lyrics.html" ml-ev="Search,Artists Item: emily-ann-roberts-lyrics.html" href="http://www.metrolyrics.com/emily-ann-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/c9804eeefe00242215deea05e728b43b.png" src="http://img2-ak.lst.fm/i/u/174s/c9804eeefe00242215deea05e728b43b.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Emily Ann <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/michael-robert-lyrics.html" ml-ev="Search,Artists Item: michael-robert-lyrics.html" href="http://www.metrolyrics.com/michael-robert-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Michael <em>Robert</em></description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberto-tapia-lyrics.html" ml-ev="Search,Artists Item: roberto-tapia-lyrics.html" href="http://www.metrolyrics.com/roberto-tapia-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/ee340c801ac44284a3b1d44fec7a5456.png" src="http://img2-ak.lst.fm/i/u/174s/ee340c801ac44284a3b1d44fec7a5456.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>o Tapia</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberta-martin-lyrics.html" ml-ev="Search,Artists Item: roberta-martin-lyrics.html" href="http://www.metrolyrics.com/roberta-martin-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>a Martin</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/keen-robert-earl-lyrics.html" ml-ev="Search,Artists Item: keen-robert-earl-lyrics.html" href="http://www.metrolyrics.com/keen-robert-earl-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Keen <em>Robert</em> Earl</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/sam-roberts-band-lyrics.html" ml-ev="Search,Artists Item: sam-roberts-band-lyrics.html" href="http://www.metrolyrics.com/sam-roberts-band-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/d35979eecac8423e890778e2078fd615.png" src="http://img2-ak.lst.fm/i/u/174s/d35979eecac8423e890778e2078fd615.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Sam <em>Robert</em>s Band</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/emma-roberts-lyrics.html" ml-ev="Search,Artists Item: emma-roberts-lyrics.html" href="http://www.metrolyrics.com/emma-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/a9caf33ccc351e3502ae229d3f31b59c.png" src="http://img2-ak.lst.fm/i/u/174s/a9caf33ccc351e3502ae229d3f31b59c.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Emma <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberto-fonseca-lyrics.html" ml-ev="Search,Artists Item: roberto-fonseca-lyrics.html" href="http://www.metrolyrics.com/roberto-fonseca-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/f203049afaef4589853b56a02412409e.png" src="http://img2-ak.lst.fm/i/u/174s/f203049afaef4589853b56a02412409e.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>o Fonseca</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-goulet-lyrics.html" ml-ev="Search,Artists Item: robert-goulet-lyrics.html" href="http://www.metrolyrics.com/robert-goulet-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/861b22a4f971457a95e8e8deee822d93.png" src="http://img2-ak.lst.fm/i/u/174s/861b22a4f971457a95e8e8deee822d93.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Goulet</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-ledesma-lyrics.html" ml-ev="Search,Artists Item: robert-ledesma-lyrics.html" href="http://www.metrolyrics.com/robert-ledesma-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Ledesma</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberto-blanco-lyrics.html" ml-ev="Search,Artists Item: roberto-blanco-lyrics.html" href="http://www.metrolyrics.com/roberto-blanco-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/ece64ffa7fd245419ece8092ed8f77c6.png" src="http://img2-ak.lst.fm/i/u/174s/ece64ffa7fd245419ece8092ed8f77c6.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>o Blanco</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/nicola-roberts-lyrics.html" ml-ev="Search,Artists Item: nicola-roberts-lyrics.html" href="http://www.metrolyrics.com/nicola-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/22ef51069eedf50bd96e1098162dd3d3.png" src="http://img2-ak.lst.fm/i/u/174s/22ef51069eedf50bd96e1098162dd3d3.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Nicola <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-j-walsh-lyrics.html" ml-ev="Search,Artists Item: robert-j-walsh-lyrics.html" href="http://www.metrolyrics.com/robert-j-walsh-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/62bb1b39fab842b886c404158a9521a2.png" src="http://img2-ak.lst.fm/i/u/174s/62bb1b39fab842b886c404158a9521a2.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> J. Walsh</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberto-alagna-lyrics.html" ml-ev="Search,Artists Item: roberto-alagna-lyrics.html" href="http://www.metrolyrics.com/roberto-alagna-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/ed8adcdc2ef44d938b0561c09bfe4119.png" src="http://img2-ak.lst.fm/i/u/174s/ed8adcdc2ef44d938b0561c09bfe4119.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>o Alagna</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/chris-roberts-lyrics.html" ml-ev="Search,Artists Item: chris-roberts-lyrics.html" href="http://www.metrolyrics.com/chris-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/a28ee98ae4bc4f3cb93122fe3f66904c.png" src="http://img2-ak.lst.fm/i/u/174s/a28ee98ae4bc4f3cb93122fe3f66904c.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Chris <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-cray-band-lyrics.html" ml-ev="Search,Artists Item: robert-cray-band-lyrics.html" href="http://www.metrolyrics.com/robert-cray-band-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/871d387db84a4766a84c942b29b6b46c.png" src="http://img2-ak.lst.fm/i/u/174s/871d387db84a4766a84c942b29b6b46c.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Cray Band</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/robert-gordon-lyrics.html" ml-ev="Search,Artists Item: robert-gordon-lyrics.html" href="http://www.metrolyrics.com/robert-gordon-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/bfe4e9375b9140cfb9582fb6e97b8458.png" src="http://img2-ak.lst.fm/i/u/174s/bfe4e9375b9140cfb9582fb6e97b8458.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Gordon</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberta-miranda-lyrics.html" ml-ev="Search,Artists Item: roberta-miranda-lyrics.html" href="http://www.metrolyrics.com/roberta-miranda-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/8d9b00415d604e0a95f3e3db90cd54a6.png" src="http://img2-ak.lst.fm/i/u/174s/8d9b00415d604e0a95f3e3db90cd54a6.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>a Miranda</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope omega" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/miles-robert-lyrics.html" ml-ev="Search,Artists Item: miles-robert-lyrics.html" href="http://www.metrolyrics.com/miles-robert-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/44e5e0b1e0cf4a0ea55380123e2710ca.png" src="http://img2-ak.lst.fm/i/u/174s/44e5e0b1e0cf4a0ea55380123e2710ca.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Miles <em>Robert</em></description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope alpha" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/ashley-roberts-lyrics.html" ml-ev="Search,Artists Item: ashley-roberts-lyrics.html" href="http://www.metrolyrics.com/ashley-roberts-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://img2-ak.lst.fm/i/u/174s/b7362fe01f054a83bd6ce93aa0005fa8.png" src="http://img2-ak.lst.fm/i/u/174s/b7362fe01f054a83bd6ce93aa0005fa8.png">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Ashley <em>Robert</em>s</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; --><li class="grid_2 ng-scope" ng-class="{alpha: 0 == $index % 4, omega: 3 == $index % 4}" ng-repeat="item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/roberto-junior-y-su-bandeno-lyrics.html" ml-ev="Search,Artists Item: roberto-junior-y-su-bandeno-lyrics.html" href="http://www.metrolyrics.com/roberto-junior-y-su-bandeno-lyrics.html">
+<span class="tmb tmb-s">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg" src="http://netstorage.metrolyrics.com/artists/profile/maf.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em>o Junior y Su Bandeno</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.artists.items | limitTo: search.active == 'all' ? search.data.artists.limit : search.max ; -->
+</ul>
+</div>
+</div>
+<!-- END Amazon ad -->
+<div class="videos clearfix ng-hide" ng-show="search.s('videos');">
+<div class="module">
+<header>
+<div id="search-results-video-header">
+<action class="action more-link" ng-click="search.l('videos');">See All</action>
+<h3>
+<span>Videos</span> (<total ng-bind="search.totals.videos" class="ng-binding">50</total>)
+</h3>
+</div>
+</header>
+<ul class="tabs clearfix" id="search-cats">
+<li ng-class="{active: search.videoActive == 'all'}" class="active"><span class="action" ng-click="search.videoActive = 'all';">All</span></li>
+<li ng-class="{active: search.videoActive == 'music'}" ng-show="search.data.videos.videoCat['music'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'music'">
+Music Videos    </span>
+</li>
+<li ng-class="{active: search.videoActive == 'lyric'}" ng-show="search.data.videos.videoCat['lyric'].count > 1" class="">
+<span class="action" ng-click="search.videoActive = 'lyric'">
+Lyric Videos    </span>
+</li>
+<li ng-class="{active: search.videoActive == 'interview'}" ng-show="search.data.videos.videoCat['interview'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'interview'">
+Interviews  </span>
+</li>
+<li ng-class="{active: search.videoActive == 'liner notes'}" ng-show="search.data.videos.videoCat['liner notes'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'liner notes'">
+Liner Notes </span>
+</li>
+<li ng-class="{active: search.videoActive == 'audio'}" ng-show="search.data.videos.videoCat['audio'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'audio'">
+Song Audio  </span>
+</li>
+<li ng-class="{active: search.videoActive == 'live'}" ng-show="search.data.videos.videoCat['live'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'live'">
+Live Videos </span>
+</li>
+<li ng-class="{active: search.videoActive == 'daily'}" ng-show="search.data.videos.videoCat['daily'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'daily'">
+Originals   </span>
+</li>
+<li ng-class="{active: search.videoActive == 'explanation'}" ng-show="search.data.videos.videoCat['explanation'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'explanation'">
+Explanations    </span>
+</li>
+<li ng-class="{active: search.videoActive == 'cover songs'}" ng-show="search.data.videos.videoCat['cover songs'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'cover songs'">
+Cover Songs </span>
+</li>
+<li ng-class="{active: search.videoActive == 'news'}" ng-show="search.data.videos.videoCat['news'].count > 1" class="ng-hide">
+<span class="action" ng-click="search.videoActive = 'news'">
+News Videos </span>
+</li>
+</ul>
+<div class="content clearfix">
+<div class="all-videos clearfix" ng-show="search.videoActive == 'all'">
+<div id="search-results-long-all-videos">
+<!-- ngRepeat: item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope alpha" ng-repeat="item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a ng-href="http://www.metrolyrics.com/killing-me-softly-with-his-song-roberta-flack-roberta-flack-ml-video-gxi.html" ml-ev="Search,Videos Item: killing-me-softly-with-his-song-roberta-flack-roberta-flack-ml-video-gxi.html" href="http://www.metrolyrics.com/killing-me-softly-with-his-song-roberta-flack-roberta-flack-ml-video-gxi.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/bmgzzEKWIug/1.jpg" src="http://i.ytimg.com/vi/bmgzzEKWIug/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<a href="http://www.metrolyrics.com/killing-me-softly-with-his-song-roberta-flack-roberta-flack-ml-video-gxi.html"><description ng-bind-html="item.description | unsafe" class="ng-binding">Killing Me Softly With His Song [Lyrics] <em>Robert</em>a Flack</description></a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope omega" ng-repeat="item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a ng-href="http://www.metrolyrics.com/robert-palmer-every-kinda-people-robert-palmer-ml-video-bao.html" ml-ev="Search,Videos Item: robert-palmer-every-kinda-people-robert-palmer-ml-video-bao.html" href="http://www.metrolyrics.com/robert-palmer-every-kinda-people-robert-palmer-ml-video-bao.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/HAx6kkdLpV0/1.jpg" src="http://i.ytimg.com/vi/HAx6kkdLpV0/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<a href="http://www.metrolyrics.com/robert-palmer-every-kinda-people-robert-palmer-ml-video-bao.html"><description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Palmer- Every Kinda People Lyrics</description></a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope alpha" ng-repeat="item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a ng-href="http://www.metrolyrics.com/robert-palmer-bad-case-of-loving-you-robert-palmer-ml-video-61e.html" ml-ev="Search,Videos Item: robert-palmer-bad-case-of-loving-you-robert-palmer-ml-video-61e.html" href="http://www.metrolyrics.com/robert-palmer-bad-case-of-loving-you-robert-palmer-ml-video-61e.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/7z9DwMKvqcc/1.jpg" src="http://i.ytimg.com/vi/7z9DwMKvqcc/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<a href="http://www.metrolyrics.com/robert-palmer-bad-case-of-loving-you-robert-palmer-ml-video-61e.html"><description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Palmer - Bad Case Of Loving You Lyrics</description></a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope omega" ng-repeat="item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a ng-href="http://www.metrolyrics.com/the-road-goes-on-forever-robert-earl-keen-robert-earl-keen-ml-video-xow.html" ml-ev="Search,Videos Item: the-road-goes-on-forever-robert-earl-keen-robert-earl-keen-ml-video-xow.html" href="http://www.metrolyrics.com/the-road-goes-on-forever-robert-earl-keen-robert-earl-keen-ml-video-xow.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/eN3BlPIwg2U/1.jpg" src="http://i.ytimg.com/vi/eN3BlPIwg2U/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<a href="http://www.metrolyrics.com/the-road-goes-on-forever-robert-earl-keen-robert-earl-keen-ml-video-xow.html"><description ng-bind-html="item.description | unsafe" class="ng-binding">The Road Goes On Forever Lyrics- <em>Robert</em> Earl Keen</description></a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="music-videos clearfix ng-hide" ng-show="search.videoActive == 'music'">
+<div id="search-results-long-music-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['music'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="lyric-videos clearfix ng-hide" ng-show="search.videoActive == 'lyric'">
+<div id="search-results-long-lyric-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope alpha" ng-repeat="item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a href="http://www.metrolyrics.com/killing-me-softly-with-his-song-roberta-flack-roberta-flack-ml-video-gxi.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/bmgzzEKWIug/1.jpg" src="http://i.ytimg.com/vi/bmgzzEKWIug/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Killing Me Softly With His Song [Lyrics] <em>Robert</em>a Flack</description>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope omega" ng-repeat="item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a href="http://www.metrolyrics.com/robert-palmer-every-kinda-people-robert-palmer-ml-video-bao.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/HAx6kkdLpV0/1.jpg" src="http://i.ytimg.com/vi/HAx6kkdLpV0/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Palmer- Every Kinda People Lyrics</description>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope alpha" ng-repeat="item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a href="http://www.metrolyrics.com/robert-palmer-bad-case-of-loving-you-robert-palmer-ml-video-61e.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/7z9DwMKvqcc/1.jpg" src="http://i.ytimg.com/vi/7z9DwMKvqcc/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Palmer - Bad Case Of Loving You Lyrics</description>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; --><ul class="grid_4 search-videos img-stacked ng-scope omega" ng-repeat="item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ;" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}">
+<li>
+<span class="tmb tmb-s">
+<a href="http://www.metrolyrics.com/the-road-goes-on-forever-robert-earl-keen-robert-earl-keen-ml-video-xow.html">
+<img class="{playable: item.video == 1}" ng-src="http://i.ytimg.com/vi/eN3BlPIwg2U/1.jpg" src="http://i.ytimg.com/vi/eN3BlPIwg2U/1.jpg">
+<span aria-hidden="true" class="icon icon-play small"></span>
+</a>
+</span>
+<span class="type ng-binding" ng-bind-html="item.type | unsafe"></span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">The Road Goes On Forever Lyrics- <em>Robert</em> Earl Keen</description>
+</li>
+</ul><!-- end ngRepeat: item in search.data.videos.videoCat['lyric'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="interview-videos clearfix ng-hide" ng-show="search.videoActive == 'interview'">
+<div id="search-results-long-interview-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['interview'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="liner notes-videos clearfix ng-hide" ng-show="search.videoActive == 'liner notes'">
+<div id="search-results-long-liner notes-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['liner notes'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="audio-videos clearfix ng-hide" ng-show="search.videoActive == 'audio'">
+<div id="search-results-long-audio-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['audio'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="live-videos clearfix ng-hide" ng-show="search.videoActive == 'live'">
+<div id="search-results-long-live-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['live'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="daily-videos clearfix ng-hide" ng-show="search.videoActive == 'daily'">
+<div id="search-results-long-daily-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['daily'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="explanation-videos clearfix ng-hide" ng-show="search.videoActive == 'explanation'">
+<div id="search-results-long-explanation-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['explanation'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="cover songs-videos clearfix ng-hide" ng-show="search.videoActive == 'cover songs'">
+<div id="search-results-long-cover songs-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['cover songs'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+<div class="news-videos clearfix ng-hide" ng-show="search.videoActive == 'news'">
+<div id="search-results-long-news-videos">
+<!-- ngRepeat: item in search.data.videos.videoCat['news'].items | limitTo: search.active == 'all' ? search.data.videos.limit : search.max ; -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lyrics clearfix ng-hide" ng-show="search.s('lyrics');">
+<div class="module">
+<header>
+<action class="action more-link" ng-click="search.l('lyrics');">See All</action>
+<h3>
+<span>Lyrics</span> (<total ng-bind="search.totals.lyrics" class="ng-binding">50</total>)
+</h3>
+</header>
+<div class="content clearfix">
+<!-- ngRepeat: item in search.data.lyrics.items | limitTo: search.active == 'all' ? search.data.lyrics.limit : search.max ; --><ul class="grid_4 tmb-small img-stacked ng-scope alpha" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.lyrics.items | limitTo: search.active == 'all' ? search.data.lyrics.limit : search.max ;">
+<li class="no-tmb">
+<p>"<snippet ng-bind-html="item.snippet | unsafe" class="ng-binding"><em>Robert</em>'s got a quick hand.
+He'll look around the room,
+he wont tell you his plan.
+He's got a rolled cigarette
+hanging out his mouth.
+He's a cowboy kid</snippet>"</p>
+</li>
+<li>
+<a ng-href="http://www.metrolyrics.com/pumped-up-kicks-lyrics-foster-the-people.html" ml-ev="Search,Lyrics Item: pumped-up-kicks-lyrics-foster-the-people.html" href="http://www.metrolyrics.com/pumped-up-kicks-lyrics-foster-the-people.html">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/albums/4037771-foster-the-people-torches.jpg" src="http://netstorage.metrolyrics.com/albums/4037771-foster-the-people-torches.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Foster The People<br>Pumped Up Kicks</description>
+</a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.lyrics.items | limitTo: search.active == 'all' ? search.data.lyrics.limit : search.max ; --><ul class="grid_4 tmb-small img-stacked ng-scope omega" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.lyrics.items | limitTo: search.active == 'all' ? search.data.lyrics.limit : search.max ;">
+<li class="no-tmb">
+<p>"<snippet ng-bind-html="item.snippet | unsafe" class="ng-binding">ch
+Just smoke my cigarette and hush
+Don't call my name
+Don't call my name, <em>Robert</em>o
+
+Alejandro
+Alejandro
+Ale-ale-jandro
+Ale-ale-jandro
+
+Alejandro
+Aleja</snippet>"</p>
+</li>
+<li>
+<a ng-href="http://www.metrolyrics.com/alejandro-lyrics-lady-gaga.html" ml-ev="Search,Lyrics Item: alejandro-lyrics-lady-gaga.html" href="http://www.metrolyrics.com/alejandro-lyrics-lady-gaga.html">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/albums/1255550546lady-gaga-the-fame-monster.jpg" src="http://netstorage.metrolyrics.com/albums/1255550546lady-gaga-the-fame-monster.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Lady GaGa<br>Alejandro</description>
+</a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.lyrics.items | limitTo: search.active == 'all' ? search.data.lyrics.limit : search.max ; -->
+</div>
+</div>
+</div>
+<div class="news clearfix ng-hide" ng-show="search.s('news');">
+<div class="module">
+<header>
+<action class="action more-link" ng-click="search.l('news');">See All</action>
+<h3>
+<span>News</span> (<total ng-bind="search.totals.news" class="ng-binding">30</total>)
+</h3>
+</header>
+<div class="content clearfix">
+<ul class="search-news tmb-small clearfix">
+<!-- ngRepeat: item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ; --><li class="grid_4 ng-scope alpha" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/news-story-robert-plant-pocketful-of-golden-song-explanation" ml-ev="Search,News Item: news-story-robert-plant-pocketful-of-golden-song-explanation" href="http://www.metrolyrics.com/news-story-robert-plant-pocketful-of-golden-song-explanation">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/editorials/robert-plant-pocketful-of-golden-song-explanation/xxsmall-image.jpg" src="http://netstorage.metrolyrics.com/editorials/robert-plant-pocketful-of-golden-song-explanation/xxsmall-image.jpg">
+</span>
+<time datetime="" ng-bind-html="item.date | unsafe" class="ng-binding">October 09, 2014</time>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Legendary Led Zeppelin Singer <em>Robert</em> Plant Explains Lyrics To New Song 'Pocketful of Golden' by Owen Stretch</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ; --><li class="grid_4 ng-scope omega" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/news-story-jay-z-nominated-to-songwriters-hall-of-fame" ml-ev="Search,News Item: news-story-jay-z-nominated-to-songwriters-hall-of-fame" href="http://www.metrolyrics.com/news-story-jay-z-nominated-to-songwriters-hall-of-fame">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/editorials/jay-z-nominated-to-songwriters-hall-of-fame/xxsmall-image.jpg" src="http://netstorage.metrolyrics.com/editorials/jay-z-nominated-to-songwriters-hall-of-fame/xxsmall-image.jpg">
+</span>
+<time datetime="" ng-bind-html="item.date | unsafe" class="ng-binding">February 23, 2017</time>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Jay Z Becomes The First Rapper Inducted Into The Songwriters Hall Of Fame by Maxime Vers</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ; --><li class="grid_4 ng-scope alpha" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/news-story-the-complete-list-of-winners-grammy-awards-2017" ml-ev="Search,News Item: news-story-the-complete-list-of-winners-grammy-awards-2017" href="http://www.metrolyrics.com/news-story-the-complete-list-of-winners-grammy-awards-2017">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/editorials/the-complete-list-of-winners-grammy-awards-2017/xxsmall-image.jpg" src="http://netstorage.metrolyrics.com/editorials/the-complete-list-of-winners-grammy-awards-2017/xxsmall-image.jpg">
+</span>
+<time datetime="" ng-bind-html="item.date | unsafe" class="ng-binding">February 13, 2017</time>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">The Complete List Of Winners At The Grammy Awards 2017 by Maxime Vers</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ; --><li class="grid_4 ng-scope omega" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/news-story-katy-perry-strips-naked-to-encourage-everyone-to-vote" ml-ev="Search,News Item: news-story-katy-perry-strips-naked-to-encourage-everyone-to-vote" href="http://www.metrolyrics.com/news-story-katy-perry-strips-naked-to-encourage-everyone-to-vote">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/editorials/katy-perry-strips-naked-to-encourage-everyone-to-vote/xxsmall-image.jpg" src="http://netstorage.metrolyrics.com/editorials/katy-perry-strips-naked-to-encourage-everyone-to-vote/xxsmall-image.jpg">
+</span>
+<time datetime="" ng-bind-html="item.date | unsafe" class="ng-binding">September 28, 2016</time>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Katy Perry Strips Down To Get Out The Vote by Maxime Vers</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ; --><li class="grid_4 ng-scope alpha" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/news-story-watch-massive-attack-new-music-video-for-the-spoils-with-cate" ml-ev="Search,News Item: news-story-watch-massive-attack-new-music-video-for-the-spoils-with-cate" href="http://www.metrolyrics.com/news-story-watch-massive-attack-new-music-video-for-the-spoils-with-cate">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/editorials/watch-massive-attack-new-music-video-for-the-spoils-with-cate/xxsmall-image.jpg" src="http://netstorage.metrolyrics.com/editorials/watch-massive-attack-new-music-video-for-the-spoils-with-cate/xxsmall-image.jpg">
+</span>
+<time datetime="" ng-bind-html="item.date | unsafe" class="ng-binding">August 10, 2016</time>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Watch Massive Attack's Trippy New Music Video For 'The Spoils' With Cate Blanchett by Maxime Vers</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ; --><li class="grid_4 ng-scope omega" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ;">
+<a ng-href="http://www.metrolyrics.com/news-story-gwen-stefani-carpool-karaoke-james-corden" ml-ev="Search,News Item: news-story-gwen-stefani-carpool-karaoke-james-corden" href="http://www.metrolyrics.com/news-story-gwen-stefani-carpool-karaoke-james-corden">
+<span class="tmb tmb-xs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/editorials/gwen-stefani-carpool-karaoke-james-corden/xxsmall-image.jpg" src="http://netstorage.metrolyrics.com/editorials/gwen-stefani-carpool-karaoke-james-corden/xxsmall-image.jpg">
+</span>
+<time datetime="" ng-bind-html="item.date | unsafe" class="ng-binding">May 04, 2016</time>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Gwen Stefani Rocks Out to Carpool Karaoke With James Corden by Maxime Vers</description>
+</a>
+</li><!-- end ngRepeat: item in search.data.news.items | limitTo: search.active == 'all' ? search.data.news.limit : search.max ; -->
+</ul>
+</div>
+</div>
+</div>
+<div class="albums clearfix ng-hide" ng-show="search.s('albums');">
+<div class="module">
+<header>
+<action class="action more-link" ng-click="search.l('albums');">See All</action>
+<h3>
+<span>Albums</span> (<total ng-bind="search.totals.albums" class="ng-binding">50</total>)
+</h3>
+</header>
+<div class="content clearfix">
+<!-- ngRepeat: item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ; --><ul class="grid_4 search-albums tmb-small img-stacked ng-scope alpha" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ;">
+<li>
+<a ng-href="http://www.metrolyrics.com/robert-johnson-albums-list-2.html#complete-recordings-album-robert-johnson" ml-ev="Search,Albums Item: robert-johnson-albums-list-2.html#complete-recordings-album-robert-johnson" href="http://www.metrolyrics.com/robert-johnson-albums-list-2.html#complete-recordings-album-robert-johnson">
+<span class="tmb tmb-xxs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/albums/6470439_robert_johnson_complete_recordings.jpg" src="http://netstorage.metrolyrics.com/albums/6470439_robert_johnson_complete_recordings.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Johnson<br>Complete Recordings</description>
+</a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ; --><ul class="grid_4 search-albums tmb-small img-stacked ng-scope omega" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ;">
+<li>
+<a ng-href="http://www.metrolyrics.com/robert-earl-keen-albums-list.html#live-dinner-reunion-album-robert-earl-keen" ml-ev="Search,Albums Item: robert-earl-keen-albums-list.html#live-dinner-reunion-album-robert-earl-keen" href="http://www.metrolyrics.com/robert-earl-keen-albums-list.html#live-dinner-reunion-album-robert-earl-keen">
+<span class="tmb tmb-xxs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/albums/2016/10/9384488jpg.jpg" src="http://netstorage.metrolyrics.com/albums/2016/10/9384488jpg.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Earl Keen<br>Live Dinner Reunion</description>
+</a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ; --><ul class="grid_4 search-albums tmb-small img-stacked ng-scope alpha" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ;">
+<li>
+<a ng-href="http://www.metrolyrics.com/robbie-robertson-albums-list.html#robbie-robertson-album-robbie-robertson" ml-ev="Search,Albums Item: robbie-robertson-albums-list.html#robbie-robertson-album-robbie-robertson" href="http://www.metrolyrics.com/robbie-robertson-albums-list.html#robbie-robertson-album-robbie-robertson">
+<span class="tmb tmb-xxs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/albums/7949625_robbie_robertson_robbie_robertson.jpg" src="http://netstorage.metrolyrics.com/albums/7949625_robbie_robertson_robbie_robertson.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding">Robbie <em>Robert</em>son<br>Robbie <em>Robert</em>son</description>
+</a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ; --><ul class="grid_4 search-albums tmb-small img-stacked ng-scope omega" ng-class="{alpha: 0 == $index % 2, omega: 1 == $index % 2}" ng-repeat="item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ;">
+<li>
+<a ng-href="http://www.metrolyrics.com/robert-miles-albums-list.html#dreamland-album-robert-miles" ml-ev="Search,Albums Item: robert-miles-albums-list.html#dreamland-album-robert-miles" href="http://www.metrolyrics.com/robert-miles-albums-list.html#dreamland-album-robert-miles">
+<span class="tmb tmb-xxs">
+<img ng-class="{playable: item.video == 1}" ng-src="http://netstorage.metrolyrics.com/albums/2017/04/1492544050-robert-miles-dreaml.jpg" src="http://netstorage.metrolyrics.com/albums/2017/04/1492544050-robert-miles-dreaml.jpg">
+</span>
+<description ng-bind-html="item.description | unsafe" class="ng-binding"><em>Robert</em> Miles<br>Dreamland</description>
+</a>
+</li>
+</ul><!-- end ngRepeat: item in search.data.albums.items | limitTo: search.active == 'all' ? search.data.albums.limit : search.max ; -->
+</div>
+</div>
+</div>
+</div>
+</div>
         <ul id="searchResults">
         </ul>
     </div>
@@ -25,5 +761,8 @@
         <span>Popularność: {{:popularity}}</span>
     </li>
     {{/for}}
+
+
+
 </ul>
 </script>

@@ -8,12 +8,13 @@ $(document).ready(function() {
 		var value = inputSpotify.val();
 		if(value !== ""){
 			$.post("spotify/search", { artist: value }, function(data) {
-				console.log(data);
-                var html = myTmpl.render(data);
+				//console.log(data);
+                //var html = myTmpl.render(data);
                 // $.each(data.artists.items, function(index, object_value) {
                 //     html += myTmpl.render(object_value);
                 // });
-		        $("#searchResults").html(html);
+		        //$("#searchResults").html(html);
+		        $("#artysci").show();
                 console.log(data);
 			});
 		}
